@@ -11,7 +11,7 @@
     "url": "git+https://github.com/apiverve/loanpaymentcalculator-API.git"
   },
   "keywords": [
-    "loan payment calculator"," loan"," loan payments"," loan payment calculator api"," loan api"," loan payment calculator tool"," loan tool"," loan payment calculator software"," loan software"," loan payment calculator service"," loan service"," loan payment calculator library"," loan library"," loan payment calculator sdk"," loan sdk"," loan payment calculator code"," loan code"," loan payment calculator script"," loan script"," loan payment calculator program"," loan program"," loan payment calculator application"," loan application"," loan app"," loan utility"," loan helper"," loan helper tool"," loan helper software"," loan helper service"," loan helper library"," loan helper sdk"," loan helper code"," loan helper script"," loan helper program"," loan helper application"," loan helper app"," loan helper tool"," loan helper utility"," loan helper"
+    "loan payment calculator","loan","loan payments","loan payment calculator api","loan api"
   ],
   "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
   "license": "MIT",
@@ -27,6 +27,6 @@
   "dependencies": {
     "node-fetch": "3.3.2",
     "promise": "^7.1.1",
-    "request": "^2.69.0"
+    "axios": "^0.15.3"
   }
 }
