@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/loanpaymentcalculator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Loan Payment Calculator is a simple tool for calculating loan payments. It returns the monthly payment, total interest, and more.",
   "main": "index.js",
   "scripts": {
