@@ -513,7 +513,8 @@ api.execute(query, function (error, data) {
         "remaining_balance": 0
       }
     ]
-  }
+  },
+  "code": 200
 }
 ```
 
