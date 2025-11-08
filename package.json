@@ -1,24 +1,26 @@
 {
   "name": "@apiverve/loanpaymentcalculator",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "Loan Payment Calculator is a simple tool for calculating loan payments. It returns the monthly payment, total interest, and more.",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "example": "node examples/basic.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/apiverve/loanpaymentcalculator-API.git"
   },
   "keywords": [
-    "loan payment calculator","loan","loan payments","loan payment calculator api","loan api"
+    "loan payment calculator", "loan", "loan payments", "loan payment calculator api", "loan api"
   ],
   "author": "APIVerve <hello@apiverve.com> (http://apiverve.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/apiverve/loanpaymentcalculator-API/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/api/loanpaymentcalculator?utm_source=npm",
+  "homepage": "https://apiverve.com/marketplace/loanpaymentcalculator?utm_source=npm",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
@@ -27,6 +29,6 @@
   "dependencies": {
     "node-fetch": "^3.3.2",
     "promise": "^8.3.0",
-    "axios": "1.7.9"
+    "axios": "1.13.2"
   }
 }
