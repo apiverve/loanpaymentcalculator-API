@@ -14,22 +14,14 @@ API_URL = 'https://api.apiverve.com/v1/loanpaymentcalculator'
 
 def call_loanpaymentcalculator_api():
     """
-    Make a POST request to the Loan Calculator API
+    Make a GET request to the Loan Calculator API
     """
     try:
-        # Request body
-        request_body &#x3D; {
-    &#x27;loanAmount&#x27;: 32000,
-    &#x27;interestRate&#x27;: 8.5,
-    &#x27;loanTerm&#x27;: 6
-}
-
         headers = {
-            'x-api-key': API_KEY,
-            'Content-Type': 'application/json'
+            'x-api-key': API_KEY
         }
 
-        response = requests.post(API_URL, headers=headers, json=request_body)
+        response = requests.get(API_URL, headers=headers)
 
         # Raise exception for HTTP errors
         response.raise_for_status()
