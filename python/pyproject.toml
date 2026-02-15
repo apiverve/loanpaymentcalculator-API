@@ -1,17 +1,20 @@
 [project]
 name = "apiverve-loancalculator"
-version = "1.1.12"
+version = "1.1.13"
 authors = [
   { name="APIVerve", email="hello@apiverve.com" },
 ]
 description = "Loan Payment Calculator is a simple tool for calculating loan payments. It returns the monthly payment, total interest, and more."
-keywords = ["loan payment calculator", "loan", "loan payments", "loan payment calculator api", "loan api"]
+keywords = []
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.7"
+license = "MIT"
+dependencies = [
+    "requests>=2.25.0"
+]
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
     "Intended Audience :: Developers",
     "Intended Audience :: Financial and Insurance Industry",
