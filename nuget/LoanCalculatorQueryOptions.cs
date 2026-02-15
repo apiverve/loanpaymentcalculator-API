@@ -11,22 +11,19 @@ namespace APIVerve.API.LoanCalculator
     public class LoanCalculatorQueryOptions
     {
         /// <summary>
-        /// The loan amount (e.g., 20000)
-        /// Example: 20000
+        /// The loan amount
         /// </summary>
         [JsonProperty("loanAmount")]
         public string LoanAmount { get; set; }
 
         /// <summary>
-        /// The interest rate (e.g., 5.5)
-        /// Example: 5.5
+        /// The interest rate (percentage)
         /// </summary>
         [JsonProperty("interestRate")]
         public string InterestRate { get; set; }
 
         /// <summary>
-        /// The loan term in years (e.g 6)
-        /// Example: 5
+        /// The loan term in years
         /// </summary>
         [JsonProperty("loanTerm")]
         public string LoanTerm { get; set; }
