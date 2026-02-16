@@ -15,7 +15,10 @@ The Loan Calculator API provides a simple, reliable way to integrate loan calcul
 [![npm](https://img.shields.io/badge/npm-CB3837?style=flat&logo=npm&logoColor=white)](https://www.npmjs.com/package/@apiverve/loanpaymentcalculator)
 [![NuGet](https://img.shields.io/badge/NuGet-004880?style=flat&logo=nuget&logoColor=white)](https://www.nuget.org/packages/APIVerve.API.LoanCalculator)
 [![PyPI](https://img.shields.io/badge/PyPI-3776AB?style=flat&logo=python&logoColor=white)](https://pypi.org/project/apiverve-loanpaymentcalculator/)
+[![RubyGems](https://img.shields.io/badge/RubyGems-E9573F?style=flat&logo=rubygems&logoColor=white)](https://rubygems.org/gems/apiverve_loanpaymentcalculator)
+[![Packagist](https://img.shields.io/badge/Packagist-F28D1A?style=flat&logo=packagist&logoColor=white)](https://packagist.org/packages/apiverve/loanpaymentcalculator)
 [![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white)](#-go)
+[![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white)](https://pub.dev/packages/apiverve_loanpaymentcalculator)
 [![JitPack](https://img.shields.io/badge/JitPack-2E7D32?style=flat&logo=android&logoColor=white)](#-android-jitpack)
 
 ---
@@ -88,6 +91,36 @@ pip install apiverve-loanpaymentcalculator
 ```
 
 [**View PyPI Package →**](https://pypi.org/project/apiverve-loanpaymentcalculator/) | [**Package Code →**](./python/)
+
+---
+
+### 💎 Ruby (RubyGems)
+
+```bash
+gem install apiverve_loanpaymentcalculator
+```
+
+[**View RubyGems Package →**](https://rubygems.org/gems/apiverve_loanpaymentcalculator) | [**Package Code →**](./ruby/)
+
+---
+
+### 🐘 PHP (Packagist)
+
+```bash
+composer require apiverve/loanpaymentcalculator
+```
+
+[**View Packagist Package →**](https://packagist.org/packages/apiverve/loanpaymentcalculator) | [**Package Code →**](./php/)
+
+---
+
+### 🎯 Dart (pub.dev)
+
+```bash
+dart pub add apiverve_loanpaymentcalculator
+```
+
+[**View pub.dev Package →**](https://pub.dev/packages/apiverve_loanpaymentcalculator) | [**Package Code →**](./dart/)
 
 ---
 
