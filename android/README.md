@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:loanpaymentcalculator-api:1.1.13'
+    implementation 'com.github.apiverve:loanpaymentcalculator-api:1.1.14'
 }
 ```
 
@@ -47,9 +47,9 @@ LoanCalculatorAPIClient client = new LoanCalculatorAPIClient("YOUR_API_KEY");
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("loanAmount", 20000);
-    parameters.put("interestRate", 5.5);
-    parameters.put("loanTerm", 5);
+    parameters.put("loanAmount", 32000);
+    parameters.put("interestRate", 8.5);
+    parameters.put("loanTerm", 6);
 
     // Execute the request
     APIResponse response = client.execute(parameters);
