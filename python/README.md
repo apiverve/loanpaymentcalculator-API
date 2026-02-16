@@ -44,7 +44,11 @@ from apiverve_loancalculator.apiClient import LoanpaymentcalculatorAPIClient
 # Initialize the client with your APIVerve API key
 api = LoanpaymentcalculatorAPIClient("[YOUR_API_KEY]")
 
-query = { "loanAmount": 32000, "interestRate": 8.5, "loanTerm": 6 }
+query = {
+    "loanAmount": 32000,
+    "interestRate": 8.5,
+    "loanTerm": 6
+}
 
 try:
     # Make the API call
@@ -82,7 +86,11 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "loanAmount": 32000, "interestRate": 8.5, "loanTerm": 6 }
+query = {
+    "loanAmount": 32000,
+    "interestRate": 8.5,
+    "loanTerm": 6
+}
 ```
 
 ###### Simple Request
@@ -559,7 +567,11 @@ from apiverve_loancalculator.apiClient import LoanpaymentcalculatorAPIClient, Lo
 
 api = LoanpaymentcalculatorAPIClient("[YOUR_API_KEY]")
 
-query = { "loanAmount": 32000, "interestRate": 8.5, "loanTerm": 6 }
+query = {
+    "loanAmount": 32000,
+    "interestRate": 8.5,
+    "loanTerm": 6
+}
 
 try:
     result = api.execute(query)
@@ -580,7 +592,11 @@ from apiverve_loancalculator.apiClient import LoanpaymentcalculatorAPIClient, Lo
 
 api = LoanpaymentcalculatorAPIClient("[YOUR_API_KEY]")
 
-query = { "loanAmount": 32000, "interestRate": 8.5, "loanTerm": 6 }
+query = {
+    "loanAmount": 32000,
+    "interestRate": 8.5,
+    "loanTerm": 6
+}
 
 try:
     result = api.execute(query)
@@ -614,7 +630,11 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_loancalculator.apiClient import LoanpaymentcalculatorAPIClient, LoanpaymentcalculatorAPIClientError
 
-query = { "loanAmount": 32000, "interestRate": 8.5, "loanTerm": 6 }
+query = {
+    "loanAmount": 32000,
+    "interestRate": 8.5,
+    "loanTerm": 6
+}
 
 # Using context manager ensures proper cleanup
 with LoanpaymentcalculatorAPIClient("[YOUR_API_KEY]") as api:
@@ -640,7 +660,11 @@ from apiverve_loancalculator.apiClient import LoanpaymentcalculatorAPIClient
 # Enable debug mode
 api = LoanpaymentcalculatorAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "loanAmount": 32000, "interestRate": 8.5, "loanTerm": 6 }
+query = {
+    "loanAmount": 32000,
+    "interestRate": 8.5,
+    "loanTerm": 6
+}
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -655,8 +679,13 @@ from apiverve_loancalculator.apiClient import LoanpaymentcalculatorAPIClient
 
 api = LoanpaymentcalculatorAPIClient("[YOUR_API_KEY]")
 
+query = {
+    "loanAmount": 32000,
+    "interestRate": 8.5,
+    "loanTerm": 6
+}
+
 try:
-    query = { "loanAmount": 32000, "interestRate": 8.5, "loanTerm": 6 }
     result = api.execute(query)
     print(result)
 finally:
