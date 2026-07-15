@@ -20,7 +20,7 @@ namespace APIVerve.Examples
         private static readonly string API_URL = "https://api.apiverve.com/v1/loanpaymentcalculator";
 
         /// <summary>
-        /// Make a GET request to the Loan Calculator API
+        /// Make a POST request to the Loan Calculator API
         /// </summary>
         static async Task<JsonDocument> CallLoanCalculatorAPI()
         {
@@ -29,7 +29,13 @@ namespace APIVerve.Examples
                 using var client = new HttpClient();
                 client.DefaultRequestHeaders.Add("x-api-key", API_KEY);
 
-                var response = await client.GetAsync(API_URL);
+                // Request body
+                var requestBody &#x3D; new { loanAmount &#x3D; 32000, interestRate &#x3D; 8.5, loanTerm &#x3D; 6 };
+
+                var jsonContent = JsonSerializer.Serialize(requestBody);
+                var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
+
+                var response = await client.PostAsync(API_URL, content);
 
                 // Check if response is successful
                 response.EnsureSuccessStatusCode();
