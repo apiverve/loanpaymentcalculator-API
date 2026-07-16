@@ -201,11 +201,61 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Loan Calculator API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "loanAmount": 32000,
+    "downpayment": 0,
+    "interestRate": 8.5,
+    "loanTerm": 6,
+    "monthly_payment": 568.91,
+    "total_interest_paid": 8961.4,
+    "total_payment": 40961.52,
+    "interestRatio": 21.88,
+    "formatted": {
+      "loanAmount": "$32,000.00",
+      "monthlyPayment": "$568.91",
+      "totalInterestPaid": "$8,961.40",
+      "totalPayment": "$40,961.52"
+    },
+    "amortization_schedule": [
+      {
+        "month": 1,
+        "interest_payment": 226.67,
+        "principal_payment": 342.24,
+        "remaining_balance": 31657.76
+      },
+      {
+        "month": 2,
+        "interest_payment": 224.24,
+        "principal_payment": 344.67,
+        "remaining_balance": 31313.09
+      },
+      {
+        "month": 3,
+        "interest_payment": 221.8,
+        "principal_payment": 347.11,
+        "remaining_balance": 30965.99
+      }
+    ]
+  }
 }
 ```
 
